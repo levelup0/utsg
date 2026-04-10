@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="ru">
+	<link rel="stylesheet" type="text/css" href="/kabinet/itu/css/screen.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="/kabinet/itu/css/print.css" media="print">
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="/kabinet/itu/css/ie.css" media="screen, projection">
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="/kabinet/itu/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/kabinet/itu/css/form.css">
+	<link rel="stylesheet" type="text/css" href="/kabinet/itu/css/report.css">
+	<link rel="stylesheet" type="text/css" href="/kabinet/itu/css/gridview.css">
+	<link rel="stylesheet" type="text/css" href="/kabinet/itu/css/pager.css">
+	<link rel="stylesheet" type="text/css" href="/kabinet/itu/themes/ulcentergas/css/custom.css">
+	<title>Личный кабинет - Вход в систему</title>
+	<script type="text/javascript">
+	function OpenInNewWindow(url) {
+		window.open("/kabinet/itu/index.php/site/help.html?helpPath=site%2Flogin", 'helpWindow',"directories=no,width=800,height=600,location=no,menubar=no,resizable=yes,scrollbars=no,status=no,toolbar=no");
+	}
+	</script>
+</head>
+<body>
+<div class="container" id="page">
+	<div id="header">
+		<div id="orgname" align="right">ООО "Ульяновскцентргаз"</div>
+		<BR />
+		<div id="logo">Личный кабинет</div>
+	</div>
+	<div id="mainmenu">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td style="padding:0px;"><BR /></td>
+				<td align="right" style="padding:5px 5px 0px 0px;">
+					<div id="helpbutton">
+						<a href="javascript:OpenInNewWindow('/kabinet/itu/help/ru/site/login.html');" title="Справка">
+							<img src="/kabinet/itu/themes/ulcentergas/images/help.png" alt="Справка">
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="content">
+		<div align="center">
+			<h2>Вход в систему</h2>
+			<form id="login-form" action="/kabinet/itu/" method="post">
+				<input type="hidden" value="" name="YII_CSRF_TOKEN" />
+				<div class="form">
+					<table class="login-form" width="400px; border:1px; solid;">
+						<tr>
+							<td align="left" colspan="3">
+								<div id="login-form_es_" class="errorSummary" style="display:none">
+									<p>Необходимо исправить следующие ошибки:</p>
+									<ul><li>dummy</li></ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="right"><label for="LoginForm_userlogin" class="required">Логин <span class="required">*</span></label></td>
+							<td align="left"><input class="form-control" size="30" maxlength="50" autofocus="autofocus" name="LoginForm[userlogin]" id="LoginForm_userlogin" type="text" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td align="right"><label for="LoginForm_password" class="required">Пароль <span class="required">*</span></label></td>
+							<td align="left"><input class="form-control" size="31" maxlength="50" name="LoginForm[password]" id="LoginForm_password" type="password" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td align="right" colspan="2"><input class="button" type="submit" name="yt0" value="Вход &gt;&gt;" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td align="left" colspan="3"><a href="/kabinet/itu/index.php/site/passwordRecovery.html">Восстановление пароля</a></td>
+						</tr>
+						<tr>
+							<td align="left" colspan="3"><a href="/kabinet/itu/index.php/site/userRegistration.html">Регистрация</a></td>
+						</tr>
+					</table>
+					<p class="note"><span class="required">*</span> обязательные поля</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+		Copyright &copy; 2015-2018 ООО АйТи "Смарт-Системы"
+		<br/>
+	</div>
+</div>
+</body>
+</html>
