@@ -57,7 +57,6 @@ const services: { name: string; checks: boolean[] }[] = [
 
 const prices = {
   regular: [190, 200, 250, 195],
-  card: [99, 149, 165, 159],
 };
 
 export default function CarWashPage() {
@@ -128,19 +127,6 @@ export default function CarWashPage() {
                   </td>
                 ))}
               </tr>
-              <tr className="bg-brand/5">
-                <td className="py-4 pr-4 font-bold text-brand">
-                  С картой «Зажигай»
-                </td>
-                {prices.card.map((p, i) => (
-                  <td
-                    key={i}
-                    className="py-4 px-2 text-center font-bold text-lg text-green-600"
-                  >
-                    {p} &#8381;
-                  </td>
-                ))}
-              </tr>
             </tbody>
           </table>
         </div>
@@ -166,12 +152,6 @@ export default function CarWashPage() {
                   <span className="text-gray-500 text-sm">Цена:</span>
                   <span className="text-xl font-bold text-brand">
                     {prices.regular[pi]} &#8381;
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-500 text-sm">С картой «Зажигай»:</span>
-                  <span className="text-xl font-bold text-green-600">
-                    {prices.card[pi]} &#8381;
                   </span>
                 </div>
               </div>

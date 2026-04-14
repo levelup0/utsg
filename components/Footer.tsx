@@ -7,8 +7,7 @@ const footerLinks = [
   { label: "Автомойка", href: "/services/car-wash" },
   { label: "Магазин и кафе", href: "/services/shop-cafe" },
   { label: "Акции", href: "/promotions" },
-  { label: "Программа лояльности", href: "/loyalty" },
-  { label: "Карта заправок", href: "/stations" },
+  { label: "Карта заправок", href: "/#map" },
   { label: "Персональные данные", href: "/privacy" },
 ];
 

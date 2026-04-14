@@ -25,17 +25,11 @@ export default function PromotionsPage() {
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/loyalty"
+            href="/#map"
             className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-dark transition-colors"
           >
-            Программа лояльности
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-          <Link
-            href="/stations"
-            className="inline-flex items-center gap-2 bg-gray-100 text-gray-700 px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-colors"
-          >
             Найти АЗС
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
