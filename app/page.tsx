@@ -94,15 +94,15 @@ export default function HomePage() {
       <section className="relative bg-dark text-white overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(227,30,36,0.35),transparent_60%)]" />
         <div
-          className="absolute inset-0 opacity-[0.08]"
+          className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
               "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
-            backgroundSize: "48px 48px",
+            backgroundSize: "56px 56px",
           }}
         />
-        <div className="max-w-7xl mx-auto px-4 py-20 md:py-28 relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-16 relative">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 backdrop-blur-sm px-3 py-1 rounded-full text-xs uppercase tracking-wider text-gray-200 mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand" />
@@ -113,7 +113,7 @@ export default function HomePage() {
                 <br />
                 <span className="text-brand">«УЦГ»</span>
               </h1>
-              <p className="text-lg md:text-2xl text-gray-300 mb-10 max-w-xl">
+              <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl">
                 Всё, что нужно вам и вашему автомобилю — топливо, мойка, кафе и
                 сервис на одной заправке.
               </p>
@@ -138,11 +138,11 @@ export default function HomePage() {
             {/* Timeline */}
             <div className="relative hidden lg:block">
               <div className="absolute -inset-4 bg-gradient-to-br from-brand/30 via-transparent to-transparent rounded-[2rem] blur-2xl" />
-              <div className="relative rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-sm p-8 md:p-10">
-                <div className="text-xs uppercase tracking-wider text-brand font-semibold mb-6">
+              <div className="relative rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-sm p-6 md:p-8">
+                <div className="text-xs uppercase tracking-wider text-brand font-semibold mb-4">
                   История компании
                 </div>
-                <div className="border-l-2 border-brand/40 pl-8 space-y-7">
+                <div className="border-l-2 border-brand/40 pl-7 space-y-5">
                   {timeline.map((t) => (
                     <div key={t.year} className="relative">
                       <div className="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-brand" />
